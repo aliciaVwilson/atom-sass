@@ -5,6 +5,8 @@ header {
   height: 33px;
   padding: 5px 0;
 
+  font-size: .89em;
+
   display: flex;
   justify-content: center;
 
@@ -18,18 +20,26 @@ header {
     justify-content: space-between;
 
     #header-content-left {
-      width: 400px;
       height: 100%;
+      display: flex;
+      align-items: center;
 
       ul{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         li{
           padding: 8px;
 
           @extend %fake-link;
-        }
+          transition: .3S;
+
+          &:hover{
+            color: #81BF8C;
+            transition: .3S;
+          }
+        }//li
       }//ul
     }//header-content-left
 
