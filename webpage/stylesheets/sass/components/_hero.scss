@@ -5,7 +5,8 @@
 
   #hero-content{
     width: $content-width;
-    height: 25px;
-    background-color: #CCC;
-  }//hero-content
-}//hero
+    #hero-content-top{
+      width: 100%;
+    }// hero-content-top
+  }// hero-content
+}// hero
