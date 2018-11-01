@@ -1,0 +1,41 @@
+// *** SUB HERO PARTIAL ***
+
+#sub-hero{
+  width: 100vw;
+  @include basic-flex(center, center);
+  margin-top: 100px;
+
+  #sub-hero-content{
+    width: $content-width;
+    @include basic-flex(center, center, column);
+
+    h1{
+      font-size: 2.3em;
+      font-weight: 300;
+      letter-spacing: .025em;
+      color: #EFDAB9;
+
+      span{
+        color: #78B0A0;
+      }
+    }// h1
+
+    ul{
+      width:100%;
+      @include basic-flex(center, center);
+
+      li{
+        margin: 40px 10px 0 10px;
+        padding: 1% 1.5%;
+        border: $border-style;
+        border-radius: 5px;
+        color: #FFD152;
+        font-size: 1.15em;
+
+        &:hover{
+          color: $hover-color;
+        }
+      }// li
+    }// ul
+  }// sub-hero-content
+}// sub-hero
