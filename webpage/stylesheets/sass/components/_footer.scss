@@ -1,0 +1,18 @@
+// *** FOOTER PARTIAL ***
+
+footer{
+  width: 100vw;
+  @include basic-flex(center, center);
+  #footer-content{
+    width: $content-width;
+    @include basic-flex(center, center);
+
+    #footer-content-left{
+      
+    }
+
+    #footer-content-right{
+
+    }
+  }
+}
