@@ -10,6 +10,7 @@ $hover-color: #EBAB00;
 
   #hero-content{
     width: $content-width;
+
     #hero-content-top{
       width: 100%;
       @include basic-flex(space-between, center);
@@ -93,5 +94,46 @@ $hover-color: #EBAB00;
         }//ul
       }//hero-content-top-ul
     }// hero-content-top
+
+    #hero-content-bottom{
+      width: 100%;
+      @include basic-flex(center, center);
+      flex-direction: column;
+
+      p{
+        color: #766E63AA;
+        font-size: .8em;
+
+        a{
+          color: #766E63;
+
+          &:hover{
+            color: $hover-color;
+          }//hover
+        }//a
+      }// p
+
+      ul{
+        width: 100%;
+        margin-top: 25.6px;
+        @include basic-flex(center, center);
+
+        li{
+          color: #8D8273;
+          font-size: .9em;
+
+
+          &:first-child{
+            margin-right: 32px;
+          }
+
+          a{
+            &:hover{
+              color: $hover-color;
+            }
+          }
+        }// li
+      }// ul
+    }// hero-content-bottom
   }// hero-content
 }// hero
