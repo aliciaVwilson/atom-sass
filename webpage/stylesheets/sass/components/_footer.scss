@@ -2,13 +2,17 @@
 
 footer{
   width: 100vw;
+  padding: 205px 0px;
+  background-color: #2C2A2B;
+  border-top: 1px solid #1A191A;
   @include basic-flex(center, center);
+  
   #footer-content{
     width: $content-width;
     @include basic-flex(center, center);
 
     #footer-content-left{
-      
+
     }
 
     #footer-content-right{
