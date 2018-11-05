@@ -59,8 +59,8 @@
               div{
                 height: 100%;
                 width: 100%;
-                background-color: #FED153;
-                border-radius: 5px;
+                background-color: $button-color;
+                border-radius: $button-radius;
                 @include basic-flex(center, center);
 
                 img{

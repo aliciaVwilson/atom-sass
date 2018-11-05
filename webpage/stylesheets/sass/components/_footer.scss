@@ -13,14 +13,31 @@ footer{
 
   #footer-content{
     width: $content-width;
-    @include basic-flex(center, center);
+    @include basic-flex(space-between, center);
 
     #footer-content-left{
+      width: 50%;
+      height: 295px;
+      padding-right: 75px;
+      box-sizing: border-box;
+      @include basic-flex(space-between, flex-start, column);
 
-    }
+      div{
+        width: fit-content;
+        color: $body-color;
+        padding: 8px 16px;
+        background-color: $button-color;
+        border-radius: $button-radius;
+        font-weight: 500;
+
+        &:hover{
+          background-color: $hover-color;
+        }
+      }//div
+    }//footer-content-left
 
     #footer-content-right{
-
+      width: 50%
     }
   }
 }
