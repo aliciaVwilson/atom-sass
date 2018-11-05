@@ -18,7 +18,7 @@ footer{
     #footer-content-left{
       width: 50%;
       height: 295px;
-      padding-right: 75px;
+      padding-right: 80px;
       box-sizing: border-box;
       @include basic-flex(space-between, flex-start, column);
 
@@ -37,7 +37,34 @@ footer{
     }//footer-content-left
 
     #footer-content-right{
-      width: 50%
-    }
-  }
-}
+      width: 50%;
+      height: 295px;
+      padding-left: 80px;
+      @include basic-flex(space-between, flex-start, column);
+
+      #footer-content-right-uls{
+        width: 100%;
+        @include basic-flex(flex-start, flex-start);
+
+
+        ul{
+          line-height: 1.7em;
+          padding-bottom: 23px;
+          li{
+            font-size: 0.99em;
+            padding-right: 35px;
+            color: $atom-tan;
+            letter-spacing: 0.04em;
+          }
+          a{
+            color: #FFD152;
+
+            &:hover{
+              color: $hover-color;
+            }//hover
+          }//a
+        }//ul
+      }//footer-content-right-uls
+    }//footer-content-right
+  }//footer-content
+}//footer

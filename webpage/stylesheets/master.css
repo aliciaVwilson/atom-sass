@@ -378,7 +378,7 @@ footer #footer-content {
 footer #footer-content #footer-content-left {
   width: 50%;
   height: 295px;
-  padding-right: 75px;
+  padding-right: 80px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -401,6 +401,40 @@ footer #footer-content #footer-content-left div:hover {
 
 footer #footer-content #footer-content-right {
   width: 50%;
+  height: 295px;
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer #footer-content #footer-content-right #footer-content-right-uls {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+footer #footer-content #footer-content-right #footer-content-right-uls ul {
+  line-height: 1.7em;
+  padding-bottom: 23px;
+}
+
+footer #footer-content #footer-content-right #footer-content-right-uls ul li {
+  font-size: 0.99em;
+  padding-right: 35px;
+  color: #EFDAB9;
+  letter-spacing: 0.04em;
+}
+
+footer #footer-content #footer-content-right #footer-content-right-uls ul a {
+  color: #FFD152;
+}
+
+footer #footer-content #footer-content-right #footer-content-right-uls ul a:hover {
+  color: #EBAB00;
 }
 
 body {
@@ -427,7 +461,7 @@ p {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 200;
   color: #EFDAB9;
   letter-spacing: .05em;
