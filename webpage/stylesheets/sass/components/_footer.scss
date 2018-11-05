@@ -2,7 +2,7 @@
 
 footer{
   width: 100vw;
-  padding: 205px 0px;
+  padding: 210px 0px;
 
 
   background: url('media/imgs/atom-rocket.svg') no-repeat #2C2A2B;
@@ -13,12 +13,12 @@ footer{
 
   #footer-content{
     width: $content-width;
-    @include basic-flex(space-between, center);
+    @include basic-flex(space-between, flex-start);
 
     #footer-content-left{
       width: 50%;
-      height: 295px;
-      padding-right: 80px;
+      height: 275px;
+      padding: 20px 100px 0 0;
       box-sizing: border-box;
       @include basic-flex(space-between, flex-start, column);
 
@@ -38,8 +38,8 @@ footer{
 
     #footer-content-right{
       width: 50%;
-      height: 295px;
-      padding-left: 80px;
+      height: 285px;
+      padding: 20px 0 0 100px;
       @include basic-flex(space-between, flex-start, column);
 
       #footer-content-right-uls{
@@ -49,7 +49,7 @@ footer{
 
         ul{
           line-height: 1.7em;
-          padding-bottom: 23px;
+          padding-bottom: 35px;
           li{
             font-size: 0.99em;
             padding-right: 35px;
