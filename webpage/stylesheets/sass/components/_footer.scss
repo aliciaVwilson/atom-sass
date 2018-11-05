@@ -1,0 +1,70 @@
+// *** FOOTER PARTIAL ***
+
+footer{
+  width: 100vw;
+  padding: 205px 0px;
+
+
+  background: url('media/imgs/atom-rocket.svg') no-repeat #2C2A2B;
+  background-position: calc(50% + 380px) 60px;
+
+  border-top: 1px solid #1A191A;
+  @include basic-flex(center, center);
+
+  #footer-content{
+    width: $content-width;
+    @include basic-flex(space-between, center);
+
+    #footer-content-left{
+      width: 50%;
+      height: 295px;
+      padding-right: 80px;
+      box-sizing: border-box;
+      @include basic-flex(space-between, flex-start, column);
+
+      div{
+        width: fit-content;
+        color: $body-color;
+        padding: 8px 16px;
+        background-color: $button-color;
+        border-radius: $button-radius;
+        font-weight: 500;
+
+        &:hover{
+          background-color: $hover-color;
+        }
+      }//div
+    }//footer-content-left
+
+    #footer-content-right{
+      width: 50%;
+      height: 295px;
+      padding-left: 80px;
+      @include basic-flex(space-between, flex-start, column);
+
+      #footer-content-right-uls{
+        width: 100%;
+        @include basic-flex(flex-start, flex-start);
+
+
+        ul{
+          line-height: 1.7em;
+          padding-bottom: 23px;
+          li{
+            font-size: 0.99em;
+            padding-right: 35px;
+            color: $atom-tan;
+            letter-spacing: 0.04em;
+          }
+          a{
+            color: #FFD152;
+
+            &:hover{
+              color: $hover-color;
+            }//hover
+          }//a
+        }//ul
+      }//footer-content-right-uls
+    }//footer-content-right
+  }//footer-content
+}//footer
