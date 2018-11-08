@@ -1,0 +1,98 @@
+// *** MIXINS ***
+@mixin circle-ani($time){
+  animation-name: rotate;
+  animation-duration: $time;
+  animation-iteration-count: infinite;
+}
+
+// *** HERO-ANI PARTIAL ***
+
+#hero-content-top-ani{
+  width: 890px;
+  height: 366px;
+  @include basic-flex(center, center);
+
+  // #octocat{
+  //   float: left;
+  //   position: relative;
+  //   top: -100px;
+  //   left: -30px;
+  //   animation: bob 2s infinite;
+  //   animation-direction: alternate;
+  //   animation-timing-function: ease-in-out;
+  // }
+
+  #hero-circles{
+    height: 366px;
+    width: 366px;
+    margin: auto;
+    position: relative;
+    @include basic-flex(center, center);
+
+    img{
+      position: absolute;
+
+      &:nth-child(2){
+        @include circle-ani(120s);
+      }
+
+      &:nth-child(3){
+        @include circle-ani(110s);
+      }
+
+      &:nth-child(4){
+        @include circle-ani(100s);
+      }
+
+      &:nth-child(5){
+        @include circle-ani(90s);
+      }
+
+      &:nth-child(6){
+        @include circle-ani(60s);
+      }
+
+      &:nth-child(7){
+        @include circle-ani(50s);
+      }
+
+      &:nth-child(8){
+        @include circle-ani(40s);
+      }
+
+      &:nth-child(9){
+        @include circle-ani(30s);
+      }
+
+      &:nth-child(11){
+        @include circle-ani(80s);
+      }
+
+      &:nth-child(12){
+        @include circle-ani(70s);
+      }
+    }
+  }// hero-circles
+}// hero-content-top-ani
+
+
+
+// *** ANIMATIONS ***
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bob{
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(15px);
+  }
+}
