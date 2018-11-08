@@ -193,8 +193,18 @@ header #header-content #header-content-right ul li img {
   width: 860px;
 }
 
+#hero #hero-content #octocat {
+  float: left;
+  position: relative;
+  top: 180px;
+  left: -120px;
+  animation: bob 2s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
 #hero #hero-content #hero-content-top {
-  width: 100%;
+  width: 780px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,9 +212,105 @@ header #header-content #header-content-right ul li img {
 }
 
 #hero #hero-content #hero-content-top #hero-content-top-ani {
-  width: 582px;
-  height: 500px;
-  background-color: #444;
+  width: 890px;
+  height: 366px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles {
+  height: 366px;
+  width: 366px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img {
+  position: absolute;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(2) {
+  animation-name: rotate;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(3) {
+  animation-name: rotate;
+  animation-duration: 110s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(4) {
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(5) {
+  animation-name: rotate;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(6) {
+  animation-name: rotate;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(7) {
+  animation-name: rotate;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(8) {
+  animation-name: rotate;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(9) {
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(11) {
+  animation-name: rotate;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+}
+
+#hero #hero-content #hero-content-top #hero-content-top-ani #hero-circles img:nth-child(12) {
+  animation-name: rotate;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bob {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
 }
 
 #hero #hero-content #hero-content-top #hero-content-top-ul {

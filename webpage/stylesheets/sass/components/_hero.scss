@@ -7,9 +7,30 @@
   #hero-content{
     width: $content-width;
 
+    #octocat{
+      float: left;
+      position: relative;
+      top: 180px;
+      left: -120px;
+      animation: bob 2s infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+
     #hero-content-top{
-      width: 100%;
+      width: 780px;
+      //removed 100% width
       @include basic-flex(space-between, center);
+
+      // #octocat{
+      //   float: left;
+      //   position: relative;
+      //   top: -100px;
+      //   left: -30px;
+      //   animation: bob 2s infinite;
+      //   animation-direction: alternate;
+      //   animation-timing-function: ease-in-out;
+      // }
 
       //INLINE SASS PARTIAL
       @import 'hero-ani';
